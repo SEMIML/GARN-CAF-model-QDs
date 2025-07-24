@@ -8,11 +8,11 @@ import subprocess
 script_name_01 = "01 Data preprocessing to convert PNG format to NPY file.py"
 
 # Define different input and output paths
-input_paths = ["/data/PNG/Reconstruction model", 
+input_paths = ["/data/PNG/Initialization model", 
                "/data/PNG/Shutter model", 
                "/data/PNG/Temperature model"
               ]
-output_paths = ["/results/NPY/Reconstruction model", 
+output_paths = ["/results/NPY/Initialization model", 
                 "/results/NPY/Shutter model", 
                 "/results/NPY/Temperature model"
                ]
@@ -116,10 +116,10 @@ if not os.path.exists("/results/CSV"):
 # Parameter configuration
 configs = [
     {
-        "data_path": "/results/NPY/Reconstruction model",
+        "data_path": "/results/NPY/Initialization model",
         "num_classes": 6,
-        "csv_path": "/results/CSV/Reconstruction_Model_Acc_and_Loss.csv",
-        "weights_path_template": "/results/Weights/weights_Reconstruction_Model/"
+        "csv_path": "/results/CSV/Initialization_Model_Acc_and_Loss.csv",
+        "weights_path_template": "/results/Weights/weights_Initialization_Model/"
     },
     {
         "data_path": "/results/NPY/Shutter model",
@@ -177,18 +177,18 @@ import sys
 
 # Define different model paths and folder paths
 model_paths = [
-    "/code/04 ONNX file/Reconstruction_model.onnx",
-    "/code/04 ONNX file/Reconstruction_model.onnx",
-    "/code/04 ONNX file/Reconstruction_model.onnx",
-    "/code/04 ONNX file/Reconstruction_model.onnx",
-    "/code/04 ONNX file/Reconstruction_model.onnx",
-    "/code/04 ONNX file/Reconstruction_model.onnx",
-    "/code/04 ONNX file/Reconstruction_model.onnx",
-    "/code/04 ONNX file/Reconstruction_model.onnx",
-    "/code/04 ONNX file/Reconstruction_model.onnx",
-    "/code/04 ONNX file/Reconstruction_model.onnx",
-    "/code/04 ONNX file/Reconstruction_model.onnx",
-    "/code/04 ONNX file/Reconstruction_model.onnx",
+    "/code/04 ONNX file/Initialization_model.onnx",
+    "/code/04 ONNX file/Initialization_model.onnx",
+    "/code/04 ONNX file/Initialization_model.onnx",
+    "/code/04 ONNX file/Initialization_model.onnx",
+    "/code/04 ONNX file/Initialization_model.onnx",
+    "/code/04 ONNX file/Initialization_model.onnx",
+    "/code/04 ONNX file/Initialization_model.onnx",
+    "/code/04 ONNX file/Initialization_model.onnx",
+    "/code/04 ONNX file/Initialization_model.onnx",
+    "/code/04 ONNX file/Initialization_model.onnx",
+    "/code/04 ONNX file/Initialization_model.onnx",
+    "/code/04 ONNX file/Initialization_model.onnx",
 
     "/code/04 ONNX file/Shutter_model.onnx",
     "/code/04 ONNX file/Shutter_model.onnx",
@@ -204,18 +204,18 @@ model_paths = [
 ]
 
 folder_paths = [
-    "/data/PNG/Reconstruction model/0 As cap/1",
-    "/data/PNG/Reconstruction model/0 As cap/2",
-    "/data/PNG/Reconstruction model/1 c(4×4)/1",
-    "/data/PNG/Reconstruction model/1 c(4×4)/2",
-    "/data/PNG/Reconstruction model/2 (2×4)/1",
-    "/data/PNG/Reconstruction model/2 (2×4)/2",
-    "/data/PNG/Reconstruction model/3 Oxidation/1",
-    "/data/PNG/Reconstruction model/3 Oxidation/2",
-    "/data/PNG/Reconstruction model/4 Deoxidation/1",
-    "/data/PNG/Reconstruction model/4 Deoxidation/2",
-    "/data/PNG/Reconstruction model/5 (n×6)/1",
-    "/data/PNG/Reconstruction model/5 (n×6)/2",
+    "/data/PNG/Initialization model/0 As cap/1",
+    "/data/PNG/Initialization model/0 As cap/2",
+    "/data/PNG/Initialization model/1 c(4×4)/1",
+    "/data/PNG/Initialization model/1 c(4×4)/2",
+    "/data/PNG/Initialization model/2 (2×4)/1",
+    "/data/PNG/Initialization model/2 (2×4)/2",
+    "/data/PNG/Initialization model/3 Oxidation/1",
+    "/data/PNG/Initialization model/3 Oxidation/2",
+    "/data/PNG/Initialization model/4 Deoxidation/1",
+    "/data/PNG/Initialization model/4 Deoxidation/2",
+    "/data/PNG/Initialization model/5 (n×6)/1",
+    "/data/PNG/Initialization model/5 (n×6)/2",
 
 
     "/data/PNG/Shutter model/0 No/1",

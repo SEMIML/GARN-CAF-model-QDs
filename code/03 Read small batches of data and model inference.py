@@ -15,7 +15,7 @@ def preprocess_and_infer(folder_path, session, input_name, output_name, model_na
         labels = ["No", "Yes"]
     elif model_name == "Temperature_model.onnx":
         labels = ["High", "Low", "Suitable"]
-    elif model_name == "Reconstruction_model.onnx":
+    elif model_name == "Initialization_model.onnx":
         labels = ["As cap", "c(4×4)", "(2×4)", "Oxidation", "Deoxidation", "(n×6)"]
     else:
         raise ValueError(f"Unrecognized model name: {model_name}")
