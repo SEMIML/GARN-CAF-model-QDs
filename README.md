@@ -61,6 +61,7 @@ This folder contains the Labview program designed for the Riber 32P system:
 2. The Labview program is exclusively designed for the Riber 32P system and requires appropriate configuration to match the specific system environment.
 3. Verify all paths and dependencies before running the codes to prevent errors during execution.
 4. In order to reduce the amount of space taken up by the results, **--epochs** is set to 10 in script **00** and **select_stride** is set to 20 in script **01**.
+5. Please use a compatible browser to open the relevant links and fold the content to avoid compatibility issues.
 
 ## Contact Information
 For further information or questions, please contact the research team.
