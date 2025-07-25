@@ -32,7 +32,7 @@ This folder contains small dataset related to the three models used in this rese
 ## How to Run the Example Code
  **00** script calls **01**, **02** and **03** scripts in sequence to demonstrate the data preprocessing, model training, and model inference process. To run the **00** script, follow these steps:
 1. **Prepare the Data**;
-   * Please confirm that the **"Reconstruction model"**, **"Shutter model"**, and **"Temperature model"** folders all exist in the path **/data/PNG**.
+   * Please confirm that the **"Initialization model"**, **"Shutter model"**, and **"Temperature model"** folders all exist in the path **/data/PNG**.
    * Verify the completeness of scripts **01**, **02**, and **03** and the **04** folder under the **code** directory. The **04** folder should contain 3 ONNX files.
 2. **Run the **00** script**
    * Select the **00** script with the mouse and right-click to select **Set as File to Run**;
